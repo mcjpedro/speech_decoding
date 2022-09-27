@@ -1,13 +1,13 @@
 # An open-access EEG dataset for speech decoding: Exploring the role of articulation and coarticulation
 
 
-Vinícius Rezende Carvalho<sup>1</sup>, Eduardo Mazoni Andrade Marçal Mendes<sup>1</sup>, Ariah Fallah<sup>2</sup>, Terrence J. Sejnowski<sup>3,4,5</sup>, Claudia Lainscsek<sup>3,4</sup>, Lindy Comstock<sup>2,6,*,$\dag$</sup>(<br>)
-<sup>1</sup> Postgraduate Program in Electrical Engineering, Federal University of Minas Gerais, Belo Horizonte, MG 31270-901, Brazil(<br>)
-<sup>2</sup> Department of Neurosurgery, University of California, Los Angeles, Los Angeles, CA 90095, USA(<br>)
-<sup>3</sup> Computational Neurobiology Laboratory, The Salk Institute for Biological Studies, La Jolla, CA 92037, USA(<br>)
-<sup>4</sup> Institute for Neural Computation University of California San Diego, La Jolla, CA 92093, USA(<br>)
-<sup>5</sup> Division of Biological Sciences, University of California San Diego, La Jolla, CA 92093, USA(<br>)
-<sup>6</sup> Department of Linguistics, National Research University Higher School of Economics, Moscow 101000, RF(<br>)
+Vinícius Rezende Carvalho<sup>1</sup>, Eduardo Mazoni Andrade Marçal Mendes<sup>1</sup>, Ariah Fallah<sup>2</sup>, Terrence J. Sejnowski<sup>3,4,5</sup>, Claudia Lainscsek<sup>3,4</sup>, Lindy Comstock<sup>2,6,*,\dag</sup><br>
+<sup>1</sup> Postgraduate Program in Electrical Engineering, Federal University of Minas Gerais, Belo Horizonte, MG 31270-901, Brazil<br>
+<sup>2</sup> Department of Neurosurgery, University of California, Los Angeles, Los Angeles, CA 90095, USA<br>
+<sup>3</sup> Computational Neurobiology Laboratory, The Salk Institute for Biological Studies, La Jolla, CA 92037, USA<br>
+<sup>4</sup> Institute for Neural Computation University of California San Diego, La Jolla, CA 92093, USA<br>
+<sup>5</sup> Division of Biological Sciences, University of California San Diego, La Jolla, CA 92093, USA<br>
+<sup>6</sup> Department of Linguistics, National Research University Higher School of Economics, Moscow 101000, RF
 
 
 ## ABSTRACT
