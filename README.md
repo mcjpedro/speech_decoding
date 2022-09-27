@@ -1,13 +1,13 @@
 # An open-access EEG dataset for speech decoding: Exploring the role of articulation and coarticulation
 
 
-Vinícius Rezende Carvalho$x_{1}$, Eduardo Mazoni Andrade Marçal Mendes$x_{1}$, Ariah Fallah$x_{2}$, Terrence J. Sejnowski$x_{3,4,5}$, Claudia Lainscsek$x_{3,4}$, Lindy Comstock$x_{2,6,*,$\dag$}$
-\affil[1]{Postgraduate Program in Electrical Engineering, Federal University of Minas Gerais, Belo Horizonte, MG 31270-901, Brazil}
-\affil[2]{Department of Neurosurgery, University of California, Los Angeles, Los Angeles, CA 90095, USA}
-\affil[3]{Computational Neurobiology Laboratory, The Salk Institute for Biological Studies, La Jolla, CA 92037, USA}
-\affil[4]{Institute for Neural Computation University of California San Diego, La Jolla, CA 92093, USA}
-\affil[5]{Division of Biological Sciences, University of California San Diego, La Jolla, CA 92093, USA}
-\affil[6]{Department of Linguistics, National Research University Higher School of Economics, Moscow 101000, RF}
+Vinícius Rezende Carvalho$x^{1}$, Eduardo Mazoni Andrade Marçal Mendes$x^{1}$, Ariah Fallah$x^{2}$, Terrence J. Sejnowski$x^{3,4,5}$, Claudia Lainscsek$x^{3,4}$, Lindy Comstock$x^{2,6,*,$\dag$}$
+$x^{1}$ Postgraduate Program in Electrical Engineering, Federal University of Minas Gerais, Belo Horizonte, MG 31270-901, Brazil
+$x^{2}$ Department of Neurosurgery, University of California, Los Angeles, Los Angeles, CA 90095, USA
+$x^{3}$ Computational Neurobiology Laboratory, The Salk Institute for Biological Studies, La Jolla, CA 92037, USA
+$x^{4}$ Institute for Neural Computation University of California San Diego, La Jolla, CA 92093, USA
+$x^{5}$ Division of Biological Sciences, University of California San Diego, La Jolla, CA 92093, USA
+$x^{6}$ Department of Linguistics, National Research University Higher School of Economics, Moscow 101000, RF
 
 
 ## ABSTRACT
