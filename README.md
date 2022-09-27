@@ -23,5 +23,5 @@ The codes used for the production of this work were made available in the [OSF](
 
 The routines set up to obtain the ERP using only ICA signal cleaning were done using the pipeline described in Figure 1, based on the EEGLab library versions 2022.0 and 2022.1 native to MATLAB.
 
-![alt text](https://github.com/mcjpedro/speech_decoding/blob/main/code_structure.png?raw=true)
+![alt text](https://github.com/mcjpedro/speech_decoding/blob/figures/code_structure.png?raw=true)
 **Figure 1** - Code structure to data processing.
