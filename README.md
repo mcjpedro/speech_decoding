@@ -9,7 +9,7 @@ Vinícius Rezende Carvalho<sup> 1,#</sup>, Eduardo Mazoni Andrade Marçal Mendes
 <sup>4</sup> Institute for Neural Computation University of California San Diego, La Jolla, CA 92093, USA<br>
 <sup>5</sup> Division of Biological Sciences, University of California San Diego, La Jolla, CA 92093, USA<br>
 <sup>6</sup> Department of Linguistics, National Research University Higher School of Economics, Moscow 101000, RF<br>
-<sup>*</sup> Corresponding author(s): Lindy Comstock (lbcomstock@ucla.edu)
+<sup>*</sup> Corresponding author(s): Lindy Comstock (lbcomstock@ucla.edu)<br>
 <sup>#</sup> These authors contributed equally to this work
 
 
