@@ -1,5 +1,6 @@
 # An open-access EEG dataset for speech decoding: Exploring the role of articulation and coarticulation
 
+$$
 \author[1,$\dag$]{Vinícius Rezende Carvalho}
 \author[1]{Eduardo Mazoni Andrade Marçal Mendes}
 \author[2]{Ariah Fallah}
@@ -12,6 +13,7 @@
 \affil[4]{Institute for Neural Computation University of California San Diego, La Jolla, CA 92093, USA}
 \affil[5]{Division of Biological Sciences, University of California San Diego, La Jolla, CA 92093, USA}
 \affil[6]{Department of Linguistics, National Research University Higher School of Economics, Moscow 101000, RF}
+$$
 
 ## ABSTRACT
 
