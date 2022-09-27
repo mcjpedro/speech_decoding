@@ -3,7 +3,7 @@
 The codes provided were used for the technical validation using only the phoneme pair tasks. The analyzes focused only on differentiating control and the two TMS regions. 
 However, the routine was written to be modified, like many comments and tips.
 
-## 1 analysis.m
+## 1. **analysis.m**
 
 This is the main code that conducts the analysis following the pipeline described in Figure 1 (repository README.md). In it, each processing step is saved as a checkpoint and 
 pictures of the signal state are generated for analysis tracking. At the end, a report of the manual modifications made can also be generated, 
@@ -23,7 +23,7 @@ target, TMS on tongue or lip target with bilbial or alveolar).
 
 This function is responsible for generating and saving the pipeline graphs. ERP, PSD and ERP charts with topographic representation have been implemented so far.
 
-## 2 group_results.m
+## 2. **group_results.m**
 
 If the analysis is followed according to the pipeline and the correct directories are compatible, it is possible to run this routine to group and analyze the ERP and 
 PSD of all participants. This was the code used to produce the results of the technical validation.
