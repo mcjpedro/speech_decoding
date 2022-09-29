@@ -19,9 +19,10 @@ Electroencephalography (EEG) holds promise for brain-computer interface (BCI) de
 
 ## CODE AVAILABILITY
 
-The codes used for the production of this work were made available in the [OSF](https://osf.io/e82p9/) and [GithHub](https://github.com/mcjpedro/speech_decoding) repositories as a way to allow reproducibility and sharing of information. In the former, the routines are in the EEG_Data_Processing folder and are responsible for the analyses available in the technical validation section. Also available in the same folder are the results obtained in two different signal processing steps, as discussed in section Z. In the second one, the same code is available, however it is located in a platform that allows version control and more resources for discussing the implementation and the analysis done. 
+The codes used in this work are available at [OSF](https://osf.io/e82p9/) to allow reproducibility and sharing of information. The routines are in the
+Study/EEG_Data_Processing/Code folder and are responsible for the analyses available in the technical validation section. The results obtained in two different signal processing steps, as discussed in Data Processing section, are placed at the same folder 
 
-The routines set up to obtain the ERP using only ICA signal cleaning were done using the pipeline described in Figure 1, based on the EEGLab library versions 2022.0 and 2022.1 native to MATLAB.
+The same code is also available on [GithHub](https://github.com/mcjpedro/speech_decoding) so as to allow version control and user’s discussion on the implementation and analysis carried I out in this work. The routines were built to obtain the ERP using only ICA and signal cleaning was performed using the pipeline described in Figure 1, based on the EEGLab library versions 2022.0 and 2022.1 native to MATLAB.
 
 ![alt text](https://github.com/mcjpedro/speech_decoding/blob/main/figures/code_structure.png?raw=true)
 **Figure 1** - Code structure to data processing.
