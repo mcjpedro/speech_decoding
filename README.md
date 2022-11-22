@@ -15,14 +15,20 @@ João Pedro Carvalho Moreira<sup> 1,#</sup>, Vinícius Rezende Carvalho<sup> 1</
 
 ## ABSTRACT
 
-Electroencephalography (EEG) holds promise for brain-computer interface (BCI) devices as a non-invasive measure of neural activity. With increased attention to EEG-based BCI-systems, publicly available datasets that can represent the complex tasks required for naturalistic speech decoding are necessary to establish a common standard of performance within the BCI community. Effective solutions must overcome noise in the EEG signal and remain reliable across sessions and subjects without overfitting to a specific dataset or task. We present two validated datasets (N=8 and N=16) for classification at the phoneme and word level and by the articulatory properties of phonemes. EEG signals were recorded from 64 channels while subjects listened to and repeated six consonants and five vowels. Individual phonemes were combined in different phonetic environments to produce coarticulated variation in forty consonant-vowel pairs, twenty real words, and twenty pseudowords. Phoneme pairs and words were presented during a control condition and during transcranial magnetic stimulation targeted to suppress or augment the EEG signal associated with specific articulatory processes.
+Electroencephalography (EEG) holds promise for brain-computer interface (BCI) devices as a non-invasive measure of neural
+activity. With increased attention to EEG-based BCI systems, publicly available datasets that can represent the complex
+tasks required for naturalistic speech decoding are necessary to establish a common standard of performance within the
+BCI community. Effective solutions must overcome various kinds of noise in the EEG signal and remain reliable across
+sessions and subjects without overfitting to a specific dataset or task. We present two validated datasets (N=8 and N=16) for
+classification at the phoneme and word level and by the articulatory properties of phonemes. EEG signals were recorded from
+64 channels while subjects listened to and repeated six consonants and five vowels. Individual phonemes were combined
+in different phonetic environments to produce coarticulated variation in forty consonant-vowel pairs, twenty real words, and
+twenty pseudowords. Phoneme pairs and words were presented during a control condition and during transcranial magnetic
+stimulation targeted to inhibit or augment the EEG signal associated with specific articulatory processes.
 
 ## CODE AVAILABILITY
 
-The codes used in this work are available at [OSF](https://osf.io/e82p9/) to allow reproducibility and sharing of information. The routines are in the
-Study/EEG_Data_Processing/Code folder and are responsible for the analyses available in the technical validation section. The results obtained in two different signal processing steps, as discussed in Data Processing section, are placed at the same folder 
-
-The same code is also available on [GithHub](https://github.com/mcjpedro/speech_decoding) so as to allow version control and user’s discussion on the implementation and analysis carried I out in this work. The routines were built to obtain the ERP using only ICA and signal cleaning was performed using the pipeline described in Figure 1, based on the EEGLab library versions 2022.0 and 2022.1 native to MATLAB.
+The data and codes used in this work are available at [OSF](https://osf.io/e82p9/) to allow reproducibility and sharing of information under the CC BY 4.0 license (http://creativecommons.org/licenses/by-nc-nd/4.0/). The routines can be found in the Study/EEG_Data_Processing/Code folder. These routines are responsible for the analyses presented in the technical validation section. The results obtained for both signal processing techniques, as discussed in Data Processing section, are placed in the same folder. The same code is available on [GithHub](https://github.com/mcjpedro/speech_decoding) so as to allow for version control and discussion of the implementation and analysis carried out in this work. The routines were built to obtain the ERP using only ICA and signal cleaning was performed using the pipeline described in Figure 1, based on the EEGLab library versions 2022.0 and 2022.1 native to MATLAB.
 
 ![alt text](https://github.com/mcjpedro/speech_decoding/blob/main/figures/code_structure.png?raw=true)
 **Figure 1** - Code structure to data processing.
