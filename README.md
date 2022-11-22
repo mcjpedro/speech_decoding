@@ -1,7 +1,7 @@
 # An open-access EEG dataset for speech decoding: Exploring the role of articulation and coarticulation
 
 
-Vinícius Rezende Carvalho<sup> 1,#</sup>, Eduardo Mazoni Andrade Marçal Mendes<sup> 1</sup>, Ariah Fallah<sup> 2</sup>, Terrence J. Sejnowski<sup> 3,4,5</sup>, Claudia Lainscsek<sup> 3,4</sup>, Lindy Comstock<sup> 2,6,*,#</sup><br>
+João Pedro Carvalho Moreira<sup> 1,#</sup>, Vinícius Rezende Carvalho<sup> 1</sup>, Eduardo Mazoni Andrade Marçal Mendes<sup> 1</sup>, Ariah Fallah<sup> 2</sup>, Terrence J. Sejnowski<sup> 3,4,5</sup>, Claudia Lainscsek<sup> 3,4</sup>, Lindy Comstock<sup> 2,6,*,#</sup><br>
 
 <sup>1</sup> Postgraduate Program in Electrical Engineering, Federal University of Minas Gerais, Belo Horizonte, MG 31270-901, Brazil<br>
 <sup>2</sup> Department of Neurosurgery, University of California, Los Angeles, Los Angeles, CA 90095, USA<br>
