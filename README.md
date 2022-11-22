@@ -24,5 +24,5 @@ Study/EEG_Data_Processing/Code folder and are responsible for the analyses avail
 
 The same code is also available on [GithHub](https://github.com/mcjpedro/speech_decoding) so as to allow version control and user’s discussion on the implementation and analysis carried I out in this work. The routines were built to obtain the ERP using only ICA and signal cleaning was performed using the pipeline described in Figure 1, based on the EEGLab library versions 2022.0 and 2022.1 native to MATLAB.
 
-![alt text](https://github.com/mcjpedro/speech_decoding/blob/main/figures/code_structure.pdf?raw=true)
+![alt text](https://github.com/mcjpedro/speech_decoding/blob/main/figures/code_structure.png?raw=true)
 **Figure 1** - Code structure to data processing.
