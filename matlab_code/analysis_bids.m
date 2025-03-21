@@ -2,8 +2,6 @@
 % João Pedro Carvalho Moreira
 % mcjpedro@gmail.com
 
-% Old version: before formatting the directories according to the BIDS standard.
-
 %% SET THE ENVIRONMENT
 
 % Sets all importatnt folders that are need to do the analysis
@@ -11,32 +9,17 @@
 clear
 clc
 
-%% SELECT THE SUBJECT FOLDER
+% Open a dialog to select the subject folder
+save_folder = uigetdir('', 'Select the folder to save the code outputs');
+[table_file_name, table_file_path] = uigetfile('*.csv', 'Select the table with the events');
 
-% Open a dialog to select a folder
-selected_folder = uigetdir('', 'Select the subject folder');
-selected_save_folder = uigetdir('', 'Select the folder to save the code outputs');
+% The info file used here is the same one used to set the events in BIDS 
+% format. It can be loaded from the GitHub repository file 
+% 'events_information'.
 
-% If the user does not cancel the selection
-if ~isempty(selected_folder) && ~isempty(selected_save_folder)
-    % Extract the subject name from the selected folder
-    [~, subject, ~] = fileparts(selected_folder);
-    
-    % Define paths as requested
-    main_folder = fullfile(selected_folder);
-    save_folder = fullfile(selected_save_folder, subject);
-    layout_file = fullfile(fileparts(selected_folder), 'sensors_layout', 'sensors_layout_eeglab_without_bad_ch.ced');
-    info_table_file = fullfile(main_folder, [subject '_Tab.csv']);
-    
-    % Display the defined values
-    fprintf('Subject: %s\n', subject);
-    fprintf('Main Folder: %s\n', main_folder);
-    fprintf('Save Folder: %s\n', save_folder);
-    fprintf('Layout File: %s\n', layout_file);
-    fprintf('Info Table File: %s\n', info_table_file);
-else
-    disp('Folder selection canceled.');
-end
+% Display the defined values
+fprintf('Save Folder: %s\n', save_folder);
+fprintf('Info Table File: %s\n', info_table_file);
 
 %% CREATE FOLDERS (FOR NEW ANALYSIS)
 
@@ -53,54 +36,18 @@ mkdir(save_folder + "\\tms_true_tongue");
 %mkdir(save_folder + "\\tms_true_tongue_alveolar");
 %mkdir(save_folder + "\\tms_true_tongue_bilabial");
 
-% Uses the ANT EEProbe CNT reader to read the .cnt file and save them 
-% as "S##.set"
-%   - Click "File/Import data/Using EEGLab functions and plugins"
-%   - Select "From ANT EEProbe .CNT file"
-%   - Check the data
-%   - Save the data as "S##.set" in the same folder as "S##.cnt"
-%   - Close the EEGlab
-%   - Run the first section again and jump to the section bellow (Load
-%   Files)
-
 eeglab
 
 %% LOAD FILES
 
-% Loads the .set file and deletes the default bad channels 
+% Loads the .set (descriotive folder)
 
 [file_name, path_name, ~] = uigetfile({'*.set'}, 'Select recording');       % Opens a pop-up to folder selection
 
 [ALLEEG, ~, ~, ALLCOM] = eeglab;                                            % Opens EEGLab window
 EEG = pop_loadset('filename',file_name,'filepath',path_name);               % Opens a .set file
-[ALLEEG, EEG, CURRENTSET] = eeg_store(ALLEEG, EEG, 0);                      % Stores the .set file into a EEGLab datset
+[ALLEEG, EEG, ~] = eeg_store(ALLEEG, EEG, 0);                      % Stores the .set file into a EEGLab datset
 EEG = eeg_checkset( EEG );                                                  % Checks the current dataset
-
-eeglab redraw;                                                              % Updates the interface
-
-%% REMOVE BAD CHANNELS
-
-EEG = pop_editeventvals(EEG,'delete',1:length(EEG.event));                  % Deletes all events assign previusly
-[ALLEEG, EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);                         % Stores the modified file into a EEGLab datset
-
-EEG = pop_select( EEG, 'nochannel', {'EOG','M1','M2','BIP1','BIP2',...
-                                     'BIP3','BIP4','BIP5','BIP6','BIP7',...
-                                     'BIP8','BIP9','BIP10','BIP11',...
-                                     'BIP12','BIP13','BIP14','BIP15',...
-                                     'BIP16','BIP17','BIP18','BIP19',...
-                                     'BIP20','BIP21','BIP22','BIP23',...
-                                     'BIP24'});                             % Removes the bad channels
-
-EEG = pop_chanedit(EEG, 'load', {layout_file, 'filetype','autodetect'});    % Loads the sensors montage layout
-[ALLEEG, EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);                         % Stores the modified file into a EEGLab datset
-
-%for channel = 1:EEG.nbchan
-%    EEG.data(channel,:) = double(EEG.data(channel,:)) - mean(double(EEG.data(channel,:)));
-%end
-
-name = char(fullfile(save_folder, [subject '_0_remove_bad_channels.set']));
-[ALLEEG, EEG, ~] = pop_newset(ALLEEG, EEG, 1,'setname', ... 
-    'Remove bad channels', 'savenew', name,'gui','off');                   % Save the dataset into a new .set file
 
 eeglab redraw;                                                              % Updates the interface
 
@@ -392,6 +339,5 @@ tmp = reshape(tmp, size(EEG.data));
 EEG.data = tmp;
 
 fprintf("OK")
-
 
 
